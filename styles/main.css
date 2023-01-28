@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+/* font-family: 'Crimson Text'; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+input:focus, textarea:focus, select:focus{outline: none;}
+a {text-decoration: none;}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+body {
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+
+    display: flex;
+    flex-direction: row;
+
+    min-height: 100vh;
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 200px;
+    padding-top: 30px;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+
+    transition: all 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+	min-height: 100%;
+}
+
+/* .sidebar:hover {
+    background-image: linear-gradient(315deg,#d64c7f,#ee4758 50%);
+} */
+
+/* Animation */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.person-icon {
+    height: 100px;
+    cursor: pointer;
+
+    border-radius: 50px;;
+    /* border: 5px solid white; */
+    /* border-top: 5px solid white; */
+    /* border-right: 5px solid white; */
+    /* border-bottom: 5px solid white; */
+    /* border-left: 5px solid white; */
+}
+
+.icon-wrap {
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    background: linear-gradient(-45deg, #0044ff, rgb(0, 200, 255), #00dd34, #f2ff00);
+    background-size: 400% 400%;
+}
+
+/* logo animation */
+
+.icon-wrap:hover {
+    animation: gradient 2s ease infinite;
+}
+
+.sidebar ul {
+    width: 100%;
+    margin-top: 80px;
+
+}
+
+.sidebar li {
+    height: 72px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    transition: all 0.4s ease;
+
+    text-align: left;
+    padding-left: 10px;
+}
+
+.sidebar li:hover {
+    background-color: rgba(255,255,255, 0.2);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(192,229,246,0.5);
+}

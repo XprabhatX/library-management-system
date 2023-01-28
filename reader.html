@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/reader.css">
+    <!-- Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Links -->
+    <script>
+        function sendto(link) {
+            // alert('you wanna go to ' + link);
+            window.location.href = link;
+        }
+    </script>
+
+    <div class="sidebar">
+        <div class="icon-wrap"><img class="person-icon" src="person-icon.png"></img></div>
+        <ul style="list-style-type: none;">
+            <li id="op1" onclick="sendto('books.php')">Book</li>
+            <li id="op2" onclick="sendto('addbook.php')">Add Book</li>
+            <li id="op3" onclick="sendto('patrons.php')">Readers</li>
+            <li id="op4" onclick="sendto('issues.php')">Issues</li>
+            <li id="op6" onclick="sendto('index.php')">Log out</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div id="greeting" class="greeting-tab">
+
+            <div class="gta">
+                <h1 class="greeting">Good Morning</h1>
+                <div class="time">
+                    <div id = "clock" onload="currentTime()"></div>
+                </div>
+            </div>
+            <div class="gtb">
+                <span class="material-symbols-rounded close-icon" id="closeBtn">close</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="reader.js"></script>
+</body>
+</html>

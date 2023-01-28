@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-tab {
+    min-width: 400px;
+    max-width: 70vw;
+    
+    /* height: 500px; */
+    padding: 20px;
+
+    /* border: 2px solid black; */
+    border-radius: 15px;
+
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+}
+
+.title {
+    width: 199px;
+    margin-left: 80px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.form {
+    margin: 30px;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form input, .submit-button {
+    margin-top: 20px;
+}
+
+.form input {
+    font-size: 20px;
+    background-color: rgba(0,0,0,0);
+
+    border: none;
+    border-bottom: 3px solid rgb(184, 140, 140);
+}
+
+.submit-button {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    width: 40%;
+
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: rgb(238, 238, 238);
+
+    font-family: sans-serif;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.submit-button:hover {
+    background-image: linear-gradient(to right, #7e28c9, #4000c1);
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.message {
+    color: blue;
+    font-family: sans-serif;
+    font-size: 14px;
+
+    margin-left: 30px;
+}
+
+.message span{
+    text-decoration: underline;
+}
+
+.container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
