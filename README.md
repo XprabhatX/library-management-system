@@ -50,7 +50,7 @@ Now relate the normalized view with the php code of GUI table and form
 
 7. Now you are ready to use my library management website!
 
-###important: some hyperlinks in the code maybe given as a 'localhost:8080/...' replace it with the appropriate link if it isn't working...
+### important: some hyperlinks in the code maybe given as a 'localhost:8080/...' replace it with the appropriate link if it isn't working...
 
-##Potential
+## Potential
 If you are a beginner planning to create a react app for this  Use 'rafce's and [routing](https://reactrouter.com/en/main/start/tutorial) to make it smooth.
