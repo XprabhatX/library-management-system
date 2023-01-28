@@ -2,7 +2,7 @@
 
 I created this easy to use college/school library management website in which you can store data about books, issues, faculties staff and students.
  
- ## UI/UI
+ ## UI/UX
  
  ![image](https://user-images.githubusercontent.com/83898334/215242442-6a4366e9-624f-4567-b964-7fb86bf9cbb3.png)
 
@@ -31,3 +31,26 @@ Admin can view his full existing details of his library activities after adding 
 
 ## How to run on your system
 1. Install [xampp](https://www.apachefriends.org/download.html)
+
+2. Refer this ER Diagram and it's Normalized view to understand the schemas:
+
+![image](https://user-images.githubusercontent.com/83898334/215250258-b7dc625b-cbad-4389-b126-23a0a78b1104.png)
+
+![image](https://user-images.githubusercontent.com/83898334/215250268-a246ab9e-afab-48e7-ba2d-742f4ca2be41.png)
+
+Now relate the normalized view with the php code of GUI table and form
+
+3. Start Apache and MySQL server
+
+4. Create a new database called 'library_test'
+
+5. Create tables according to the given relational database
+
+6. Fill in the initial data like faculty, students, books, etc
+
+7. Now you are ready to use my library management website!
+
+###important: some hyperlinks in the code maybe given as a 'localhost:8080/...' replace it with the appropriate link if it isn't working...
+
+##Potential
+If you are a beginner planning to create a react app for this  Use 'rafce's and [routing](https://reactrouter.com/en/main/start/tutorial) to make it smooth.
